@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIVision | Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AI<span>Vision</span></div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard" class="active">Dashboard</a>
+        <a href="/ml">Machine Learning</a>
+        <a href="/deep-learning">Deep Learning</a>
+        <a href="/analytics">Analytics</a>
+    </div>
+</nav>
+
+
+<main class="professional-page">
+
+    <!-- PAGE HEADER -->
+    <section class="dashboard-header">
+
+        <div>
+            <p class="eyebrow">AI DATA WORKSPACE</p>
+            <h1>Data Management Dashboard</h1>
+            <p class="header-description">
+                Prepare and manage datasets before running machine learning,
+                deep learning and analytical models.
+            </p>
+        </div>
+
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            System Online
+        </div>
+
+    </section>
+
+
+    <!-- QUICK STATS -->
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-label">Platform</div>
+            <div class="stat-value">AIVision</div>
+            <p>Artificial Intelligence Workspace</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-label">Data Source</div>
+            <div class="stat-value">CSV</div>
+            <p>Upload or load external datasets</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-label">AI Models</div>
+            <div class="stat-value">5+</div>
+            <p>Machine & deep learning models</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-label">Status</div>
+            <div class="stat-value status-green">Ready</div>
+            <p>Platform ready for analysis</p>
+        </div>
+
+    </section>
+
+
+    <!-- DATA MANAGEMENT -->
+    <section class="dashboard-panel">
+
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">DATA MANAGEMENT</p>
+                <h2>Choose Your Data Source</h2>
+            </div>
+
+            <p>
+                Generate testing data, upload your own CSV,
+                or import a dataset from a URL.
+            </p>
+        </div>
+
+
+        <div class="data-tools-grid">
+
+            <!-- GENERATE -->
+            <div class="modern-tool-card">
+
+                <div class="tool-number">01</div>
+
+                <h3>Generate Sample Data</h3>
+
+                <p>
+                    Create 500 sample records instantly for testing
+                    AIVision's machine learning capabilities.
+                </p>
+
+                <button
+                    class="modern-button"
+                    onclick="generateData()">
+                    Generate 500 Samples
+                </button>
+
+            </div>
+
+
+            <!-- UPLOAD -->
+            <div class="modern-tool-card">
+
+                <div class="tool-number">02</div>
+
+                <h3>Upload CSV Dataset</h3>
+
+                <p>
+                    Upload a CSV dataset from your computer and prepare
+                    it for AI analysis.
+                </p>
+
+                <input
+                    type="file"
+                    id="csvFile"
+                    accept=".csv"
+                    class="modern-input">
+
+                <button
+                    class="modern-button"
+                    onclick="uploadCSV()">
+                    Upload Dataset
+                </button>
+
+            </div>
+
+
+            <!-- URL -->
+            <div class="modern-tool-card">
+
+                <div class="tool-number">03</div>
+
+                <h3>Import From URL</h3>
+
+                <p>
+                    Enter a direct CSV URL and allow AIVision to
+                    import the dataset automatically.
+                </p>
+
+                <input
+                    type="text"
+                    id="datasetUrl"
+                    class="modern-text-input"
+                    placeholder="https://example.com/dataset.csv">
+
+                <button
+                    class="modern-button"
+                    onclick="loadDatasetURL()">
+                    Import Dataset
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div class="operation-result">
+
+            <div>
+                <span class="result-indicator"></span>
+                <strong>Activity</strong>
+            </div>
+
+            <div id="dashboardMessage">
+                Waiting for an action...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+    <section class="dashboard-panel">
+
+        <div class="panel-heading">
+
+            <div>
+                <p class="eyebrow">DATA INSIGHTS</p>
+                <h2>Dataset Statistics</h2>
+            </div>
+
+            <button
+                class="outline-button"
+                onclick="loadStatistics()">
+                Analyse Dataset
+            </button>
+
+        </div>
+
+        <div
+            id="statisticsResult"
+            class="statistics-display">
+
+            <div class="empty-state">
+                <div class="empty-icon">∑</div>
+
+                <h3>No statistics available yet</h3>
+
+                <p>
+                    Generate or upload a dataset, then select
+                    Analyse Dataset.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 AIVision • Artificial Intelligence Platform</p>
+</footer>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>

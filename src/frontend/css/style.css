@@ -1,0 +1,816 @@
+/* =========================================
+   AIVISION - COMPLETE GREY THEME
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #17191c;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    min-height: 78px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #222529;
+    border-bottom: 1px solid #383c41;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #aeb4ba;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #c5c9cd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   DASHBOARD MAIN AREA
+========================================= */
+
+.professional-page {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 55px 7% 80px;
+
+    background: #17191c;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 50px;
+}
+
+.dashboard-header h1 {
+    font-size: 40px;
+    line-height: 1.15;
+
+    margin: 10px 0 14px;
+
+    color: #ffffff;
+}
+
+.eyebrow {
+    color: #9da3a9;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.2px;
+}
+
+.header-description {
+    max-width: 680px;
+
+    color: #a8adb2;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   SYSTEM STATUS
+========================================= */
+
+.status-badge {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 11px 17px;
+
+    background: #24272b;
+
+    border: 1px solid #41454a;
+    border-radius: 30px;
+
+    color: #d1d4d7;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.status-dot,
+.result-indicator {
+    width: 8px;
+    height: 8px;
+
+    display: inline-block;
+
+    border-radius: 50%;
+
+    background: #8f969d;
+}
+
+
+/* =========================================
+   TOP DASHBOARD CARDS
+========================================= */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 28px;
+
+    margin-bottom: 65px;
+}
+
+.stat-card {
+    min-height: 150px;
+
+    padding: 27px;
+
+    background: #24272b;
+
+    border: 1px solid #3a3e43;
+    border-radius: 12px;
+
+    transition: 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #666c72;
+
+    background: #292c30;
+}
+
+.stat-label {
+    margin-bottom: 17px;
+
+    color: #8e949a;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+}
+
+.stat-value {
+    margin-bottom: 11px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.stat-card p {
+    color: #969ca2;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.status-green {
+    color: #d8dcdf;
+}
+
+
+/* =========================================
+   MAIN DASHBOARD PANELS
+========================================= */
+
+.dashboard-panel {
+    width: 100%;
+
+    padding: 38px;
+
+    margin-bottom: 60px;
+
+    background: #202327;
+
+    border: 1px solid #373b40;
+    border-radius: 14px;
+}
+
+.panel-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+
+.panel-heading h2 {
+    margin-top: 8px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+}
+
+.panel-heading > p {
+    max-width: 480px;
+
+    color: #9da3a9;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   DATA SOURCE CARDS
+========================================= */
+
+.data-tools-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+}
+
+.modern-tool-card {
+    min-height: 320px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #292c30;
+
+    border: 1px solid #41454a;
+    border-radius: 12px;
+
+    transition: 0.2s ease;
+}
+
+.modern-tool-card:hover {
+    transform: translateY(-4px);
+
+    background: #2e3135;
+
+    border-color: #666c72;
+}
+
+.tool-number {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    background: #3a3e43;
+
+    border: 1px solid #4b5056;
+    border-radius: 8px;
+
+    color: #e3e5e7;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.modern-tool-card h3 {
+    margin-bottom: 14px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+.modern-tool-card p {
+    margin-bottom: 25px;
+
+    color: #a1a6ab;
+
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.modern-input,
+.modern-text-input {
+    width: 100%;
+
+    min-height: 45px;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    background: #1b1e21;
+
+    color: #e8e9ea;
+
+    border: 1px solid #4a4f54;
+    border-radius: 7px;
+}
+
+.modern-text-input::placeholder {
+    color: #747a80;
+}
+
+.modern-text-input:focus {
+    outline: none;
+
+    border-color: #8d9399;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.modern-button {
+    margin-top: auto;
+
+    min-height: 44px;
+
+    padding: 12px 20px;
+
+    background: #696f75;
+
+    color: #ffffff;
+
+    border: 1px solid #797f85;
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.modern-button:hover {
+    background: #7b8187;
+
+    transform: translateY(-1px);
+}
+
+.outline-button {
+    min-height: 43px;
+
+    padding: 11px 20px;
+
+    background: #292c30;
+
+    color: #e1e3e5;
+
+    border: 1px solid #555b61;
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.outline-button:hover {
+    background: #35393d;
+
+    border-color: #777d83;
+}
+
+
+/* =========================================
+   ACTIVITY RESULT
+========================================= */
+
+.operation-result {
+    margin-top: 38px;
+
+    padding: 20px 22px;
+
+    background: #191c1f;
+
+    border: 1px solid #383c41;
+    border-radius: 9px;
+
+    color: #b2b6ba;
+
+    line-height: 1.6;
+}
+
+.operation-result > div:first-child {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 9px;
+
+    color: #e2e4e6;
+}
+
+
+/* =========================================
+   DATASET STATISTICS
+========================================= */
+
+.statistics-display {
+    min-height: 220px;
+
+    padding: 35px;
+
+    background: #191c1f;
+
+    border: 1px dashed #474c51;
+    border-radius: 11px;
+
+    color: #c8cbce;
+}
+
+.empty-state {
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.empty-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+
+    background: #303439;
+
+    border: 1px solid #484d52;
+    border-radius: 9px;
+
+    color: #d9dcdf;
+
+    font-size: 22px;
+}
+
+.empty-state h3 {
+    margin-bottom: 9px;
+
+    color: #eeeeee;
+
+    font-size: 17px;
+}
+
+.empty-state p {
+    color: #8f959b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   HOMEPAGE HERO
+========================================= */
+
+.hero {
+    min-height: 580px;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 80px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #17191c,
+        #24272b
+    );
+}
+
+.small-title {
+    margin-bottom: 20px;
+
+    color: #a4a9ae;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+.hero h1 {
+    max-width: 780px;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+
+    font-size: 54px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #aeb3b8;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin-bottom: 35px;
+
+    color: #aeb3b8;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 17px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 21px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.primary-btn {
+    background: #686e74;
+    color: #ffffff;
+}
+
+.secondary-btn {
+    background: transparent;
+
+    color: #dedfe1;
+
+    border: 1px solid #646a70;
+}
+
+.hero-card {
+    padding: 38px;
+
+    background: #292c30;
+
+    border: 1px solid #41454a;
+    border-radius: 15px;
+}
+
+.ai-icon {
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    background: #484d52;
+
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-card h3 {
+    margin-bottom: 14px;
+}
+
+.hero-card p {
+    color: #a5aaaf;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   HOMEPAGE FEATURES
+========================================= */
+
+.features {
+    padding: 80px 8%;
+
+    background: #1d2023;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    margin-bottom: 10px;
+
+    color: #969ca2;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 33px;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 28px;
+
+    background: #292c30;
+
+    border: 1px solid #3e4247;
+    border-radius: 11px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.feature-card:hover {
+    background: #303338;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #9ea3a8;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 28px;
+
+    background: #17191c;
+
+    border-top: 1px solid #34383c;
+
+    color: #858b91;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .data-tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .professional-page {
+        padding: 35px 20px;
+    }
+
+    .dashboard-header,
+    .panel-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header h1 {
+        font-size: 32px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+}
