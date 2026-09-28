@@ -1045,9 +1045,8 @@ with app.app_context():
     print("Database created successfully") 
 
  
+if __name__ == '__main__':
 
-if __name__ == '__main__': 
+    print("\nAIVision running at http://localhost:5000\n")
 
-    print("\nAIVision running at http://localhost:5000\n") 
-
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    app.run(debug=False, host='0.0.0.0', port=5000)
