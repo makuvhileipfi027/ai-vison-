@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AIVision | Analytics</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">
+        AI<span>Vision</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/ml">Machine Learning</a>
+        <a href="/deep-learning">Deep Learning</a>
+        <a href="/analytics" class="active">Analytics</a>
+    </div>
+
+</nav>
+
+
+<main class="professional-page">
+
+    <!-- HEADER -->
+    <section class="dashboard-header">
+
+        <div>
+
+            <p class="eyebrow">
+                INTELLIGENCE & INSIGHTS
+            </p>
+
+            <h1>
+                Analytics Overview
+            </h1>
+
+            <p class="header-description">
+                Transform your dataset into meaningful statistics,
+                correlations and AI-ready insights.
+            </p>
+
+        </div>
+
+
+        <button
+            class="modern-button header-button"
+            onclick="loadAnalytics()">
+
+            Refresh Analytics
+
+        </button>
+
+    </section>
+
+
+    <!-- ANALYTICS SUMMARY -->
+
+    <section class="analytics-summary-grid">
+
+        <div class="analytics-stat-card">
+
+            <p>Total Samples</p>
+
+            <div
+                id="totalSamples"
+                class="analytics-number">
+                0
+            </div>
+
+            <span>
+                Records available for analysis
+            </span>
+
+        </div>
+
+
+        <div class="analytics-stat-card">
+
+            <p>Data Status</p>
+
+            <div class="analytics-status">
+                Active
+            </div>
+
+            <span>
+                Database connection available
+            </span>
+
+        </div>
+
+
+        <div class="analytics-stat-card">
+
+            <p>Analysis Engine</p>
+
+            <div class="analytics-text-value">
+                AI Ready
+            </div>
+
+            <span>
+                Statistical processing enabled
+            </span>
+
+        </div>
+
+
+        <div class="analytics-stat-card">
+
+            <p>Platform</p>
+
+            <div class="analytics-text-value">
+                AIVision
+            </div>
+
+            <span>
+                Intelligence workspace
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN ANALYTICS -->
+
+    <section class="analytics-layout">
+
+
+        <!-- CATEGORIES -->
+
+        <div class="dashboard-panel analytics-panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="eyebrow">
+                        DATA DISTRIBUTION
+                    </p>
+
+                    <h2>
+                        Dataset Categories
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div
+                id="categoriesResult"
+                class="category-display">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        #
+                    </div>
+
+                    <h3>
+                        Categories not loaded
+                    </h3>
+
+                    <p>
+                        Select Refresh Analytics to retrieve
+                        dataset categories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SYSTEM STATUS -->
+
+        <div class="dashboard-panel analytics-panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        SYSTEM
+                    </p>
+
+                    <h2>
+                        Analytics Status
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="system-status-card">
+
+                <div class="system-status-row">
+
+                    <span>Database</span>
+
+                    <strong class="online-text">
+                        ● Online
+                    </strong>
+
+                </div>
+
+
+                <div class="system-status-row">
+
+                    <span>Analytics API</span>
+
+                    <strong class="online-text">
+                        ● Ready
+                    </strong>
+
+                </div>
+
+
+                <div class="system-status-row">
+
+                    <span>AI Engine</span>
+
+                    <strong class="online-text">
+                        ● Available
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="analyticsStatus"
+                class="operation-result analytics-message">
+
+                Waiting for analytics data...
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICAL ANALYSIS -->
+
+    <section class="dashboard-panel">
+
+        <div class="panel-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    STATISTICAL ENGINE
+                </p>
+
+                <h2>
+                    Statistical Analysis
+                </h2>
+
+                <p>
+                    Examine means, standard deviations and
+                    correlations in the current dataset.
+                </p>
+
+            </div>
+
+
+            <button
+                class="outline-button"
+                onclick="loadStatisticsAnalytics()">
+
+                Run Statistical Analysis
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="analyticsStatistics"
+            class="statistics-display">
+
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    σ
+                </div>
+
+                <h3>
+                    Statistical analysis not started
+                </h3>
+
+                <p>
+                    Run the analysis to calculate statistical
+                    information from your dataset.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+    <p>
+        © 2026 AIVision • Artificial Intelligence Platform
+    </p>
+</footer>
+
+
+<script src="/js/app.js"></script>
+
+</body>
+
+</html>

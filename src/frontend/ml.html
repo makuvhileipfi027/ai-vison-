@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AIVision | Machine Learning</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">
+        AI<span>Vision</span>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/">Home</a>
+
+        <a href="/dashboard">
+            Dashboard
+        </a>
+
+        <a href="/ml">
+            Machine Learning
+        </a>
+
+        <a href="/deep-learning">
+            Deep Learning
+        </a>
+
+        <a href="/analytics">
+            Analytics
+        </a>
+
+    </div>
+
+</nav>
+
+
+<section class="page-section">
+
+
+    <div class="page-heading">
+
+        <p class="small-title">
+            MACHINE LEARNING
+        </p>
+
+        <h1>
+            Train Machine Learning Models
+        </h1>
+
+        <p>
+            Run classification, regression,
+            clustering and anomaly detection models.
+        </p>
+
+    </div>
+
+
+    <div class="feature-container">
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                CLASSIFY
+            </div>
+
+            <h3>
+                Classification
+            </h3>
+
+            <p>
+                Train a Random Forest classifier
+                using your dataset.
+            </p>
+
+            <button
+                class="btn primary-btn"
+                onclick="runClassification()"
+            >
+                Train Classifier
+            </button>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                REGRESSION
+            </div>
+
+            <h3>
+                Regression
+            </h3>
+
+            <p>
+                Train a Random Forest regression
+                model and calculate prediction error.
+            </p>
+
+            <button
+                class="btn primary-btn"
+                onclick="runRegression()"
+            >
+                Train Regressor
+            </button>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                CLUSTER
+            </div>
+
+            <h3>
+                Clustering
+            </h3>
+
+            <p>
+                Group similar data records
+                using K-Means clustering.
+            </p>
+
+            <button
+                class="btn primary-btn"
+                onclick="runClustering()"
+            >
+                Run Clustering
+            </button>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                ANOMALY
+            </div>
+
+            <h3>
+                Anomaly Detection
+            </h3>
+
+            <p>
+                Detect unusual data points
+                using Isolation Forest.
+            </p>
+
+            <button
+                class="btn primary-btn"
+                onclick="runAnomalyDetection()"
+            >
+                Detect Anomalies
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <div
+        id="mlResult"
+        class="result-box"
+    >
+
+        Select a Machine Learning model.
+
+    </div>
+
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 AIVision • Artificial Intelligence Platform
+    </p>
+
+</footer>
+
+
+<script src="/js/app.js"></script>
+
+
+</body>
+
+</html>
